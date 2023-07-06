@@ -2,7 +2,7 @@
 **𝓝𝓞𝓑𝓘 𝓥𝓘𝓢𝓘𝓣𝓞𝓡𝓢**
 <div><img  src="https://profile-counter.glitch.me/jaisingh007/count.svg">
 
-**welcome to the nobits community**
+**welcome to the nobita's community**
 </div>
 
 <h2  align="center">
