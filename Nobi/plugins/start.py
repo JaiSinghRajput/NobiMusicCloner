@@ -13,7 +13,7 @@ PM_START_TEXT = """
 ➻ **ᴄʟɪᴄᴋ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ꜰᴏʀ ᴍᴏʀᴇ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ**.
 """
 
-@Nobi.on(events.NewMessage(pattern="^[/!/]start$"))
+@Nobi.on(events.NewMessage(pattern="^[/!?]start$"))
 async def start(event):
     if Config.MANAGEMENT_MODE == "ENABLE":
         return
@@ -22,7 +22,9 @@ async def start(event):
              Config.START_IMG,
              caption=PM_START_TEXT.format(event.sender.first_name), 
              buttons=[
-        [Button.url("✨ ᴀᴅᴅ ᴍᴇ", f"https://telegram.me/{BOT_USERNAME}/startgroup=true"), Button.inline("🥀 ʜᴇʟᴘ", data="help")]])
+        [Button.url("✨ 𝑨𝒅𝒅 𝑴𝒆 ✨", f"https://telegram.me/{BOT_USERNAME}?startgroup=true"), Button.inline("🥀 𝑯𝒆𝒍𝒑 🥀", data="help")]
+        [Button.url("💞 𝑴𝒚 𝑴𝒂𝒔𝒕𝒆𝒓 💞", "https://telegram.me/Radhe_krishna_hare_hare"), Button.url("🏫 𝑶𝒇𝒇𝒊𝒄𝒆 🏫", "https://telegram.me/The_nobita_support")]
+        [Button.url("🆂🆄🅿🅿🅾🆁🆃 🅲🅷🅰🆃", "https://telegram.me/INDIAN_CHATING_CLUB")]])
        return
 
     if event.is_group:
